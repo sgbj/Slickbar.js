@@ -1,0 +1,122 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Sidebar</title>
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="sidebar.css" rel="stylesheet" />
+        
+        <style>
+            body {
+                background-color: #f3f3f3;
+                font-family: Roboto, sans-serif;
+                color: #222;
+            }
+            input {
+                margin-top: 7px;
+                background-image: linear-gradient(#020202, #101112 40%, #191b1d);
+                border: 1px solid rgba(0, 0, 0, 0.6);
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+                color: #fff;
+                border-radius: 4px;
+                padding: 8px;
+                display: block;
+                width: 100%;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -o-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-transition: all 300ms linear;
+                -moz-transition: all 300ms linear;
+                -o-transition: all 300ms linear;
+                -ms-transition: all 300ms linear;
+                transition: all 300ms linear;
+            }
+            input:focus {
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.2);
+                border-color: rgba(0, 0, 0, 0.6);
+            }
+            .manual-sidebar {
+                position: fixed;
+                right: 0;
+                top: 0;
+                font-size: 24px;
+                border-radius: 6px;
+                background-color: #333;
+                padding: 6px;
+                color: #fff;
+                margin: 8px;
+            }
+            .manual-sidebar:hover {
+                background-color: #222;
+                -webkit-transition: all 300ms linear;
+                -moz-transition: all 300ms linear;
+                -o-transition: all 300ms linear;
+                -ms-transition: all 300ms linear;
+                transition: all 300ms linear;
+            }
+            .content {
+                width: 70%;
+                margin-left: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar child" id="account-menu">
+            <h3 class="heading">Account <i class="icon fa fa-fw fa-user"></i></h3>
+            <a href="" class="menu-item">Profile <i class="icon fa fa-fw fa-comment"></i></a>
+            <a href="" class="menu-item">Change Password <i class="icon fa fa-fw fa-lock"></i></a>
+            <a href="" class="menu-item">Payment History <i class="icon fa fa-fw fa-money"></i></a>
+        </div>
+            
+        <div class="sidebar child" id="settings-menu">
+            <h3 class="heading">Settings <i class="icon fa fa-fw fa-cog"></i></h3>
+            <a href="" class="menu-item">Application <i class="icon fa fa-fw fa-code"></i></a>
+            <a href="" class="menu-item">Database <i class="icon fa fa-fw fa-database"></i></a>
+        </div>
+        
+        <div class="sidebar child" id="more-menu">
+            <h3 class="heading">More <i class="icon fa fa-fw fa-ellipsis-h"></i></h3>
+            <a href="" data-sidebar-hide="#more-menu" data-sidebar-show="#even-more-menu" class="menu-item">Even More <i class="icon fa fa-fw fa-heart"></i></a>
+            <div class="static-menu-item">
+                <label>
+                    Sign up for our newsletter.
+                    <input type="email" placeholder="Enter your email">
+                </label>
+            </div>
+        </div>
+        
+        <div class="sidebar child" id="even-more-menu">
+            <h3 class="heading">Even More <i class="icon fa fa-fw fa-heart"></i></h3>
+            <div class="static-menu-item">
+                Made with love and licensed under MIT.<br/>
+            </div>
+            <a href="https://github.com/sgbj" class="menu-item"><3 sgbj</a>
+        </div>
+                
+        <div class="sidebar" id="main-menu">
+            <h3 class="heading">Sidebar <i class="icon fa fa-fw fa-bars"></i></h3>
+            <a href="" class="menu-item active">Home <i class="icon fa fa-fw fa-home"></i></a>
+            <a href="" data-sidebar-hide="#main-menu" data-sidebar-show="#account-menu" class="menu-item">Account <i class="icon fa fa-fw fa-user"></i></a>
+            <a href="" data-sidebar-hide="#main-menu" data-sidebar-show="#settings-menu" class="menu-item">Settings <i class="icon fa fa-fw fa-cog"></i></a>
+            <a href="" data-sidebar-hide="#main-menu" data-sidebar-show="#more-menu" class="menu-item">More <i class="icon fa fa-fw fa-ellipsis-h"></i></a>
+        </div>
+        
+        <a href="" class="manual-sidebar" data-sidebar-toggle="#main-menu">
+            <i class="fa fa-fw fa-bars fa-xl"></i>
+        </a>
+        
+        <div class="content">
+            <h1>Sidebar</h1>   
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat est nisl. Suspendisse potenti. Nam at cursus elit. Nullam lacus diam, tincidunt sit amet nibh at, placerat tincidunt dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer justo arcu, malesuada nec fringilla non, pellentesque fermentum massa. Nam mollis leo eget ipsum aliquet, sed convallis diam tristique.</p>
+            <p>Fusce finibus tortor metus, ut imperdiet turpis egestas at. Maecenas at tellus eget nisi tincidunt ultricies non vitae augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida tincidunt nisi, ut pellentesque quam elementum eget. Nulla interdum, dolor non commodo laoreet, elit felis rhoncus augue, ut lacinia velit ligula at massa. Proin ut malesuada purus. Nunc dapibus efficitur lectus sodales pellentesque. Duis blandit dolor libero, eget faucibus metus tincidunt id. Sed vitae urna egestas, tristique orci ut, imperdiet augue.</p>
+            <p>Aenean ut semper augue, sit amet tempor quam. In porttitor diam ipsum, sit amet rutrum mauris interdum eget. Sed aliquam ex sed lectus facilisis fringilla. Morbi ut ante dapibus, aliquam purus sed, auctor lacus. Curabitur at elit vitae libero sodales egestas in ac velit. Aenean dignissim gravida dolor. Curabitur pretium lectus purus, quis faucibus nibh ultricies in.</p>
+            <p>Pellentesque porta est in nulla feugiat bibendum. Aenean quis risus quis nulla iaculis tempor. Vivamus aliquam nunc et nisl fringilla, et ornare neque lobortis. Sed sed dapibus nibh. Nunc consequat non quam quis dignissim. Aliquam sit amet arcu tempor, tincidunt sapien sed, euismod magna. Pellentesque lacinia scelerisque nibh eget facilisis. Vivamus nisi nisi, fringilla in nibh nec, pretium convallis est. Mauris commodo augue at arcu consequat suscipit. Cras sed neque erat. Duis ut felis eu libero egestas dapibus ac quis metus.</p>
+            <p>Etiam eu dolor sit amet nulla ultrices luctus ut nec justo. Nunc egestas nisi odio. Aenean bibendum eleifend leo, vel egestas risus viverra sed. Sed vulputate sodales sem eget elementum. Ut pellentesque rutrum lorem, ac pretium diam volutpat et. Sed sed est nibh. In iaculis venenatis nisi, nec iaculis erat sollicitudin ac. Mauris laoreet leo faucibus arcu hendrerit, molestie tempus lacus aliquet. In in libero ac mauris ultrices faucibus. Mauris ac consequat nisl. Etiam egestas, purus consequat tincidunt imperdiet, ligula arcu molestie orci, sed gravida neque tortor sed lectus. Nullam quis venenatis lectus. Quisque hendrerit ante quis tempor volutpat. Nunc non nisi diam.</p> 
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="sidebar.js"></script>
+    </body>
+</html>
