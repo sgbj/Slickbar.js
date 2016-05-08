@@ -56,6 +56,8 @@
             for (var i = 0; i < sidebars.length; i++) {
                 sidebars[i].addEventListener('mouseenter', onShowSidebar.bind(sidebars[i]));
                 sidebars[i].addEventListener('mouseleave', onHideSidebar.bind(sidebars[i]));
+                sidebars[i].addEventListener('touchstart', onShowSidebar.bind(sidebars[i]));
+                sidebars[i].addEventListener('touchend', onHideSidebar.bind(sidebars[i]));
             }
 
             var sidebarTogglers = document.querySelectorAll('[data-sidebar-toggle]');
