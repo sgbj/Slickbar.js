@@ -1,25 +1,28 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Roboto);
-
 body {
     margin-left: 52px;
 }
 
 .sidebar {
-    font-family: Roboto, sans-serif;
-    width: 320px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 280px;
     background-color: #333;
     box-shadow: 0 0 10px 0 #222;
     height: 100%;
     position: fixed;
     top: 0;
-    left: -268px;
-    z-index: 999999;
+    left: -228px;
+    z-index: 9000;
     font-size: 14px;
+    transition: left ease-out .3s;
 }
 
 .sidebar.child {
     margin-left: 52px;
-    left: -340px;
+    left: -300px;
+}
+
+.sidebar.active {
+    left: 0;
 }
 
 .sidebar .heading {
@@ -40,11 +43,11 @@ body {
     text-decoration: none;
     border-top: 1px solid #4d4d4d;
     border-bottom: 1px solid #1a1a1a;
-    -webkit-transition: all 100ms linear;
-    -moz-transition: all 100ms linear;
-    -o-transition: all 100ms linear;
-    -ms-transition: all 100ms linear;
-    transition: all 100ms linear;
+    -webkit-transition: all .05s linear;
+    -moz-transition: all .05s linear;
+    -o-transition: all .05s linear;
+    -ms-transition: all .05s linear;
+    transition: all .05s linear;
 }
 
 .sidebar .menu-item:hover, .sidebar .menu-item.active {

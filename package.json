@@ -1,0 +1,31 @@
+{
+  "name": "slickbar",
+  "version": "1.0.0",
+  "description": "A slick sidebar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgbj/Slickbar.js.git"
+  },
+  "keywords": [
+    "slick",
+    "sidebar",
+    "js",
+    "menu",
+    "side",
+    "nav"
+  ],
+  "author": "sgbj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sgbj/Slickbar.js/issues"
+  },
+  "homepage": "https://github.com/sgbj/Slickbar.js#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.5"
+  }
+}
