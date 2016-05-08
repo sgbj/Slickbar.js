@@ -4,13 +4,13 @@
 
 .sidebar {
     font-family: Arial, Helvetica, sans-serif;
-    width: 280px;
+    width: 260px;
     background-color: #333;
     box-shadow: 0 0 10px 0 #222;
     height: 100%;
     position: fixed;
     top: 0;
-    left: -228px;
+    left: -208px;
     z-index: 9000;
     font-size: 14px;
     transition: left ease-out .3s;
@@ -18,7 +18,7 @@
 
 .sidebar.child {
     margin-left: 52px;
-    left: -300px;
+    left: -280px;
 }
 
 .sidebar.active {
